@@ -9,7 +9,7 @@
   --secondary: oklch(0.94 0.03 225);
   --muted-foreground: oklch(0.55 0.04 232);
   --border: oklch(0.9 0.02 225);
-  --font-heading: 'Shippori Mincho', serif;
+  --font-heading: 'Zen Kaku Gothic New', sans-serif;
   --font-sans: 'Zen Kaku Gothic New', sans-serif;
   --font-script: 'Parisienne', cursive;
 }
