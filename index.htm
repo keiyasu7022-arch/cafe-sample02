@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>渚カフェ NAGISA｜海辺のおだやかなカフェ</title>
+  <meta name="description" content="潮風と光がやさしく満ちる、海辺の小さなカフェ「渚カフェ NAGISA」。季節の食材を使ったランチと、こだわりのコーヒー、ゆったりとした時間をどうぞ。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Shippori+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header id="site-header">
+    <div class="header-inner">
+      <a href="#top" class="logo">
+        <span class="logo-en">NAGISA</span>
+        <span class="logo-jp">渚カフェ</span>
+      </a>
+
+      <nav class="main-nav" aria-label="メインナビゲーション">
+        <a href="#top" class="nav-item"><span class="nav-en">TOP</span><span class="nav-jp">トップ</span></a>
+        <a href="#concept" class="nav-item"><span class="nav-en">CONCEPT</span><span class="nav-jp">コンセプト</span></a>
+        <a href="#menu" class="nav-item"><span class="nav-en">MENU</span><span class="nav-jp">メニュー</span></a>
+        <a href="#gallery" class="nav-item"><span class="nav-en">GALLERY</span><span class="nav-jp">ギャラリー</span></a>
+        <a href="#news" class="nav-item"><span class="nav-en">NEWS</span><span class="nav-jp">お知らせ</span></a>
+        <a href="#access" class="nav-item"><span class="nav-en">ACCESS</span><span class="nav-jp">アクセス</span></a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:0500000000" class="header-tel">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91A16 16 0 0 0 16 16.91l.46-.46a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 23 18.92z"/></svg>
+          050-0000-0000
+        </a>
+        <a href="#access" class="btn-reservation">ご予約・お問い合わせ</a>
+        <button type="button" id="menu-open" class="menu-toggle" aria-label="メニューを開く">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- モバイルドロワー -->
+    <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+      <button type="button" id="drawer-overlay" class="drawer-overlay" aria-label="メニューを閉じる"></button>
+      <div class="drawer-panel">
+        <div class="drawer-header">
+          <span class="drawer-logo">NAGISA</span>
+          <button type="button" id="menu-close" aria-label="メニューを閉じる">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          </button>
+        </div>
+        <nav class="drawer-nav" aria-label="モバイルナビゲーション">
+          <a href="#top" class="drawer-nav-item"><span>TOP</span><span>トップ</span></a>
+          <a href="#concept" class="drawer-nav-item"><span>CONCEPT</span><span>コンセプト</span></a>
+          <a href="#menu" class="drawer-nav-item"><span>MENU</span><span>メニュー</span></a>
+          <a href="#gallery" class="drawer-nav-item"><span>GALLERY</span><span>ギャラリー</span></a>
+          <a href="#news" class="drawer-nav-item"><span>NEWS</span><span>お知らせ</span></a>
+          <a href="#access" class="drawer-nav-item"><span>ACCESS</span><span>アクセス</span></a>
+        </nav>
+        <a href="tel:0500000000" class="drawer-tel">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91A16 16 0 0 0 16 16.91l.46-.46a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 23 18.92z"/></svg>
+          050-0000-0000
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ヒーロー -->
+    <section id="top" class="hero">
+      <img src="images/hero-ocean.png" alt="窓の向こうに穏やかな海が広がる、光に満ちたカフェの店内" class="hero-bg">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-script">by the sea</p>
+        <h1 class="hero-title">海と暮らす、<br>おだやかな時間。</h1>
+        <p class="hero-desc">
+          潮風と光がやさしく満ちる、海辺の小さなカフェ。<br>
+          季節の食材とこだわりの一杯を、波の音とともに。
+        </p>
+      </div>
+      <div class="scroll-indicator">
+        <span class="scroll-text">SCROLL</span>
+        <span class="scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- コンセプト -->
+    <section id="concept" class="concept">
+      <div class="container">
+        <div class="concept-grid">
+          <div class="concept-image-wrap">
+            <div class="concept-img-main">
+              <img src="images/interior.png" alt="木のぬくもりと植物に囲まれた、明るいカフェの店内">
+            </div>
+            <div class="concept-img-sub">
+              <img src="images/coffee.png" alt="ラテアートの施されたコーヒー">
+            </div>
+          </div>
+          <div class="concept-text">
+            <p class="section-script">Concept</p>
+            <span class="section-subtitle">私たちについて</span>
+            <h2 class="section-title">波の音を聞きながら、<br>何もしない贅沢を。</h2>
+            <p class="concept-body">渚カフェ NAGISA は、海をすぐそばに感じられる小さなカフェです。大きな窓いっぱいに広がる空と海をながめながら、ゆっくりと流れる時間を過ごしていただけます。</p>
+            <p class="concept-body">地元の漁港や農家から届く季節の食材を活かしたお料理と、一杯ずつていねいに淹れるコーヒー。気取らない、けれど心がほどけるような時間をお届けします。</p>
+            <a href="#menu" class="text-link">メニューを見る<span class="text-link-line"></span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- メニュー -->
+    <section id="menu" class="menu-section">
+      <div class="container">
+        <div class="section-heading center">
+          <p class="section-script">Menu</p>
+          <span class="section-subtitle">おしながき</span>
+          <h2 class="section-title">季節をいただく、海辺の食卓</h2>
+        </div>
+        <div class="menu-grid">
+          <article class="menu-card">
+            <div class="menu-img"><img src="images/lunch.png" alt="渚のランチプレート"></div>
+            <p class="menu-en">Lunch Plate</p>
+            <div class="menu-info">
+              <h3 class="menu-name">渚のランチプレート</h3>
+              <span class="menu-price">¥1,580</span>
+            </div>
+            <p class="menu-desc">地元野菜と本日の魚を使った、彩り豊かな日替わりプレート。スープ・ドリンク付き。</p>
+          </article>
+          <article class="menu-card">
+            <div class="menu-img"><img src="images/dessert.png" alt="海色のパンケーキ"></div>
+            <p class="menu-en">Sweets</p>
+            <div class="menu-info">
+              <h3 class="menu-name">海色のパンケーキ</h3>
+              <span class="menu-price">¥980</span>
+            </div>
+            <p class="menu-desc">ふわふわの生地に季節のフルーツと、空をうつしたような青いクリームを添えて。</p>
+          </article>
+          <article class="menu-card">
+            <div class="menu-img"><img src="images/drink.png" alt="オーシャンソーダ"></div>
+            <p class="menu-en">Drink</p>
+            <div class="menu-info">
+              <h3 class="menu-name">オーシャンソーダ</h3>
+              <span class="menu-price">¥680</span>
+            </div>
+            <p class="menu-desc">晴れた海をイメージした、すっきり爽やかな自家製シロップのクリームソーダ。</p>
+          </article>
+          <article class="menu-card">
+            <div class="menu-img"><img src="images/coffee.png" alt="渚ブレンド"></div>
+            <p class="menu-en">Coffee</p>
+            <div class="menu-info">
+              <h3 class="menu-name">渚ブレンド</h3>
+              <span class="menu-price">¥520</span>
+            </div>
+            <p class="menu-desc">深すぎず軽やかな、一日のはじまりに寄り添うオリジナルブレンドコーヒー。</p>
+          </article>
+        </div>
+        <p class="menu-note">※ 表示価格は税込です。メニューは仕入れ状況により変更となる場合がございます。</p>
+      </div>
+    </section>
+
+    <!-- ギャラリー -->
+    <section id="gallery" class="gallery-section">
+      <div class="container">
+        <div class="section-heading center">
+          <p class="section-script">Gallery</p>
+          <span class="section-subtitle">店内の風景</span>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item gallery-item--large">
+            <img src="images/hero-ocean.png" alt="窓辺の海の眺め">
+          </div>
+          <div class="gallery-item">
+            <img src="images/dessert.png" alt="青いクリームのパンケーキ">
+          </div>
+          <div class="gallery-item">
+            <img src="images/exterior.png" alt="海辺に佇むカフェの外観">
+          </div>
+          <div class="gallery-item">
+            <img src="images/lunch.png" alt="彩り豊かなランチプレート">
+          </div>
+          <div class="gallery-item">
+            <img src="images/drink.png" alt="オーシャンソーダ">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- お知らせ -->
+    <section id="news" class="news-section">
+      <div class="container-narrow">
+        <div class="section-heading center">
+          <p class="section-script">News</p>
+          <span class="section-subtitle">お知らせ</span>
+        </div>
+        <ul class="news-list">
+          <li class="news-item">
+            <a href="#news" class="news-link">
+              <span class="news-date">2026.06.10</span>
+              <span class="news-cat">EVENT</span>
+              <span class="news-text">6月の週末は『海辺の朝市マルシェ』を開催します。</span>
+            </a>
+          </li>
+          <li class="news-item">
+            <a href="#news" class="news-link">
+              <span class="news-date">2026.05.28</span>
+              <span class="news-cat">MENU</span>
+              <span class="news-text">夏季限定メニュー「オーシャンソーダ」が登場しました。</span>
+            </a>
+          </li>
+          <li class="news-item">
+            <a href="#news" class="news-link">
+              <span class="news-date">2026.05.15</span>
+              <span class="news-cat">INFO</span>
+              <span class="news-text">営業時間変更のお知らせ。火曜・水曜は定休日となります。</span>
+            </a>
+          </li>
+          <li class="news-item">
+            <a href="#news" class="news-link">
+              <span class="news-date">2026.04.30</span>
+              <span class="news-cat">INFO</span>
+              <span class="news-text">テラス席の予約受付を開始いたしました。</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- アクセス -->
+    <section id="access" class="access-section">
+      <div class="container">
+        <div class="section-heading center">
+          <p class="section-script">Access</p>
+          <span class="section-subtitle">店舗情報・アクセス</span>
+        </div>
+        <div class="access-grid">
+          <div class="access-img">
+            <img src="images/exterior.png" alt="海辺に佇む白いカフェの外観">
+          </div>
+          <div class="access-info">
+            <h3 class="access-name">渚カフェ NAGISA</h3>
+            <dl class="info-list">
+              <div class="info-row">
+                <dt>住所</dt>
+                <dd>〒000-0000　海辺県 渚市 海岸通り 1-2-3</dd>
+              </div>
+              <div class="info-row">
+                <dt>電話</dt>
+                <dd>050-0000-0000</dd>
+              </div>
+              <div class="info-row">
+                <dt>営業時間</dt>
+                <dd>9:00 – 18:00（L.O. 17:30）</dd>
+              </div>
+              <div class="info-row">
+                <dt>定休日</dt>
+                <dd>毎週 火曜・水曜</dd>
+              </div>
+              <div class="info-row">
+                <dt>席数</dt>
+                <dd>店内 24席 / テラス 12席</dd>
+              </div>
+            </dl>
+            <div class="access-buttons">
+              <a href="tel:0500000000" class="btn-primary">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91A16 16 0 0 0 16 16.91l.46-.46a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 23 18.92z"/></svg>
+                電話で予約する
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn-outline">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>
+                Instagram
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-wrap">
+          <iframe
+            title="渚カフェ NAGISA の地図"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=139.0%2C35.0%2C140.0%2C35.6&layer=mapnik"
+            loading="lazy"
+          ></iframe>
+        </div>
+
+        <div class="access-features">
+          <div class="feature">
+            <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <p>海岸沿いの国道から車で3分<br>専用駐車場 8台あり</p>
+          </div>
+          <div class="feature">
+            <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <p>朝の海を眺める<br>モーニングは 9:00 から</p>
+          </div>
+          <div class="feature">
+            <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.91A16 16 0 0 0 16 16.91l.46-.46a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 23 18.92z"/></svg>
+            <p>ご予約・お問い合わせは<br>お電話にて承ります</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- フッター -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-script">by the sea</p>
+        <p class="footer-logo">NAGISA</p>
+        <p class="footer-jp">渚カフェ</p>
+        <nav class="footer-nav" aria-label="フッターナビゲーション">
+          <a href="#top">TOP</a>
+          <a href="#concept">CONCEPT</a>
+          <a href="#menu">MENU</a>
+          <a href="#gallery">GALLERY</a>
+          <a href="#news">NEWS</a>
+          <a href="#access">ACCESS</a>
+        </nav>
+        <p class="footer-address">〒000-0000　海辺県 渚市 海岸通り 1-2-3 ／ TEL 050-0000-0000</p>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">© 2026 NAGISA Cafe. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
